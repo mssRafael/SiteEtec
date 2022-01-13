@@ -31,7 +31,17 @@
 
 .logo a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: Noto Serif;
 }
 
+@media (max-width: 2000px) {
+    .list-menu{
+        display: none;
+    }
+    #btn-mobile.ativo ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+}

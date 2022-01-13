@@ -17,15 +17,20 @@
         <div class="logo">
             <h2><a href="home.php">TechShop</a></h2>
         </div>
-        <script>
-            const btn = document.getElementById('');
-        </script>
+        
         <nav class="nav-list-box">
-            <ul>
+            <buttom id="btn-mobile">Menu</buttom>
+            <ul id="list-menu">
                 <li><a href="#">Produtos em destaque</a></li>
                 <li><a href="#">Produtos</a></li>
                 <li><a href="#">Sobre</a></li>
             </ul>
+        <script>
+            const btn = document.getElementById('btn-mobile');
+            btn.onclick = function() {
+                btn.classList.toggle("ativo");
+            }
+        </script>
         </nav>
     </header>
 </body>
